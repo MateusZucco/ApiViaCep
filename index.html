@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIACEP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Consulta à API VIACEP</h1>
+
+    <form>
+      <input type="text" id="cep" placeholder="CEP" required maxlength="9" />
+      <button id="submit">Consultar</button>
+    </form>
+
+    <div class="erro" id="erro"></div>
+
+    <div id="result">
+      <div style="text-align: center;">
+        <span id="street"></span><span id="complement"></span
+        ><span id="neighborhood"></span><span id="locale"></span
+        ><span id="uf"></span><span id="cepText"></span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
